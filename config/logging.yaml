@@ -1,0 +1,27 @@
+---
+version:  1
+disable_existing_formatters:  False
+formatters:
+  standard:
+    format:  "%(asctime)s  %(module)s - %(levelname)s - [%(process)d] (%(funcName)s:%(lineno)s) : %(message)s"
+
+handlers:
+  log_file_handler:
+    class:  logging.handlers.RotatingFileHandler
+    level:  DEBUG
+    formatter:  standard
+    filename:  logs/jarvis.log
+    maxBytes:  52428800
+    backupCount:  10
+    encoding:  utf8
+
+loggers:
+  standard_logging:
+    level:  DEBUG
+    handlers:  [log_file_handler]
+    propagate:  no
+
+root:
+  level:  DEBUG
+  handlers:  [log_file_handler]
+
