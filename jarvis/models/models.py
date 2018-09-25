@@ -1,7 +1,7 @@
 from jarvis_run import db
 
 """
-Creates the tables for the database
+Creates  the tables for the database
 """
 
 
