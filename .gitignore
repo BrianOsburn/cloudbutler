@@ -212,8 +212,8 @@ pip-selfcheck.json
 
 #  Stuff
 config/jarvis.yaml
-logs/*
-db/*
+logs/*.log
+db/*.db
 Pipfile
 Pipfile.lock
 
