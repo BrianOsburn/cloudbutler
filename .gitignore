@@ -214,5 +214,7 @@ pip-selfcheck.json
 config/jarvis.yaml
 logs/*
 db/*
+Pipfile
+Pipfile.lock
 
 # End of https://www.gitignore.io/api/python,pycharm+all
