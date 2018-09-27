@@ -102,6 +102,6 @@ def adduser():
     #  Send final message
     message = {'text':  ':sun_small_cloud:  Request has been completed at this time'}
     requests.post(response_url, json=message)
-    return 200
+    return ''
 
 
