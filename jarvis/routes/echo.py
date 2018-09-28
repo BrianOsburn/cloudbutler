@@ -8,7 +8,7 @@ from jarvis_run import logger
 from jarvis.slack_utilities.validate_call import validate_request
 
 
-@jarvis_app.route('/echo', methods=['GET', 'POST'])
+@jarvis_app.route('/echo', methods='POST')
 def echo():
     logger.info("Echo function called")
     validate_request(request)

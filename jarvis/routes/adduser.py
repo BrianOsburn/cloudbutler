@@ -12,7 +12,7 @@ import requests
 import re
 
 
-@jarvis_app.route('/adduser', methods=['GET', 'POST'])
+@jarvis_app.route('/adduser', methods='POST')
 def adduser():
     """
     Adds users to the database:
