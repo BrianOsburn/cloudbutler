@@ -8,7 +8,7 @@ from jarvis_run import logger
 from jarvis.slack_utilities.validate_call import validate_request
 
 
-@jarvis_app.route('/heartbeat', methods='POST')
+@jarvis_app.route('/heartbeat', methods=["POST"])
 def heartbeat():
     logger.info("Heartbeat function called")
     validate_request(request)

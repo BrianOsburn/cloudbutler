@@ -12,14 +12,15 @@ logger.info("Setting up DB Connection")
 
 db = init_db(jarvis_app, app_config)
 
+#  Set up slack client connection
+sc = SlackClient(app_config['slack']['bot_oauth_key'])
+
 #  Get the routes
 logger.info("Setting up routes in flask")
 import jarvis.routes.heartbeat
 import jarvis.routes.echo
 import jarvis.routes.adduser
-
-#  Set up slack client connection
-sc = app_config['slack']['bot_oauth_key']
+import jarvis.routes.page_cs
 
 
 if __name__ == '__main__':
