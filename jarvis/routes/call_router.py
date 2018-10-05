@@ -36,7 +36,7 @@ def message_receiver():
         process_response(message)
         return ('', 200)
 
-    message = {'text': 'Configuration not found for request:  %s', request_type}
+    message = {'text': 'Configuration not found for request'}
     logger.warning("Request received for unconfigured request_type:  %s", request_type)
     return jsonify(message)
 

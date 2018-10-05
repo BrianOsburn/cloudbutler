@@ -15,6 +15,8 @@ def lookup_username(user_id):
 
     logger.info("Looking up user name from Slack API")
     profile = sc.api_call("users.info", timeout=None, user=user_id)
+    logger.debug("Profile returned:  ")
+    logger.debug(profile)
     user_full_name = profile['user']['profile']['real_name_normalized']
 
     return user_full_name

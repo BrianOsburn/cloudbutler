@@ -21,6 +21,7 @@ import jarvis.routes.heartbeat
 import jarvis.routes.echo
 import jarvis.routes.adduser
 import jarvis.routes.page_cs
+import jarvis.routes.call_router
 
 
 if __name__ == '__main__':
