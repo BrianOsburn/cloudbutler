@@ -2,6 +2,7 @@ import hashlib
 import hmac
 from jarvis_run import logger, app_config
 
+
 def validate_request(request):
     """
     Validates the request is officially from slack.  See https://api.slack.com/docs/verifying-requests-from-slack

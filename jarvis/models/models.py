@@ -32,12 +32,17 @@ class TicketQueue(Base):
     priority = db.Column(db.String, nullable=False)
     description = db.Column(db.String)
     casetype = db.Column(db.String)
+    case_link = db.Column(db.String)
+    assigned_to = db.Column(db.String)
+
 
     def __repr__(self):
         return "<TicketQueue(record_number='%s', date_created='%s', date_modified='%s', case_number='%s', " \
-               "req_uid='%s', req_uname='%s', status='%s', priority='%s', description='%s', casetype='%s')>" % \
+               "req_uid='%s', req_uname='%s', status='%s', priority='%s', description='%s', casetype='%s', " \
+               "case_link='%s', assigned_to='%s', )>" % \
                (self.record_number, self.date_created, self.date_modified, self.case_number, self.req_uid,
-                self.req_uname, self.status, self.priority, self.description, self.casetype)
+                self.req_uname, self.status, self.priority, self.description, self.casetype, self.case_link,
+                self.assigned_to)
 
 
 class TicketDetails(Base):

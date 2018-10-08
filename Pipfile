@@ -8,6 +8,7 @@ pyyaml = "*"
 flask = "*"
 flask-sqlalchemy = "*"
 slackclient = "*"
+pytz = "*"
 
 [dev-packages]
 
